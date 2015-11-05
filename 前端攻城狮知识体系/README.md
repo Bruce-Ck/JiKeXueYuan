@@ -534,40 +534,25 @@ hasOwnProperty是Object.prototype的一个方法, 他能判断一个对象是否
 
 >通常可以做一些小练习来判断TA的水平，js 虽然很灵活，但是具体的代码和实现方式能体现出一个人的全局观，随着代码规模的增长，复杂度增加，如何合理划分模块实现功能和接口的能力比较重要。（下面例题）  
 
-
-
-```1```
-
+		1.
 		["1", "2", "3"].map(parseInt)	
 		->	[1, NaN, NaN]//因为parseInt需要两个参数,而map传递了三个,故...
 		//应该为["1", "2", "3"].map(function(value){return parseInt(value)});
 
-
-
-```2```
-	
+		2.
 		[typeof null, null instanceof Object]	
 		->["object", false]
 		
-		
-		
-```3```
-		
+		3.
 		[ [3,2,1].reduce(Math.pow), [].reduce(Math.pow)] ]
 		->Math.power(底数,指数),故第一次:Math.power(3,2)=9,第二次:Math.power(9,1)=9.
 		
-		
-		
-```4```
-
+		4.
 		var val = 'smtg';
  		console.log('Value is ' + (val === 'smtg') ? 'Something' : 'Nothing');
  		-> Something,先进行字符串拼接,故不管什么值都返回something
  		
-		 
-		 
- ```5```
- 
+		5.
   		var name = 'World';
 		(function(){
 			if(typeof name === 'undefined'){
@@ -579,12 +564,8 @@ hasOwnProperty是Object.prototype的一个方法, 他能判断一个对象是否
 		})();
  		->判断语句被包裹在立即调用函数里，函数内部无法访问外部值为'World'的name，
  		因此typeof name === 'undefined'为真，执行下一步操作，最终输出Goodbye Jack
- 		
-		 
-		 
-		 
- ```6```
  
+ 		6.
  		var START = END -100;
 		var count = 0;
 
@@ -595,15 +576,14 @@ hasOwnProperty是Object.prototype的一个方法, 他能判断一个对象是否
  		->END = 9007199254740992 ,START = 9007199254740892目的是计算的END和START之间的
  		差。但是2的53次方计算出的结果由于精度问题使得i++失效。
  		
-		 
-		 
-```7``` 		
- 		
+		7.
  		(function(x){
    			delete x;
     		alert(x);
 		})(1+5);
 		-> 6//delete只能通过for in删除访问的属性, 即使删除失败也不会报错,返回6
+
+  
 
 
 ===
