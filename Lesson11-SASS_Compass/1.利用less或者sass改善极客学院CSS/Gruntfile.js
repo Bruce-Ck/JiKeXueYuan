@@ -1,16 +1,17 @@
-// Generated on 2015-10-07 using
-// generator-webapp 1.1.0
+// Generated on 2015-11-10 using
+// generator-极客学院首页完整版 1.1.0
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
+// # 说明
+// 单层目录结构如下:
 // 'test/spec/{,*/}*.js'
-// If you want to recursively match all subfolders, use:
+// 如果想递归查找下层所有目录, 使用:
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
+  //grunt完成任务所需的时间条
   require('time-grunt')(grunt);
 
   // Automatically load required grunt tasks
@@ -18,7 +19,9 @@ module.exports = function (grunt) {
     useminPrepare: 'grunt-usemin'
   });
 
-  // Configurable paths
+  // 配置目录路径
+  // app:源文件的位置
+  //dist:build完毕的文件路径
   var config = {
     app: 'app',
     dist: 'dist'
@@ -27,29 +30,30 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
-    // Project settings
+    // 配置目录路径
     config: config,
 
-    // Watches files for changes and runs tasks based on the changed files
+    // 监视变化的文档目录,如果变化则更新测试项目
+    //建议sass最多不能超过3层
     watch: {
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
       },
       babel: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
+        files: ['<%= config.app %>/scripts/**/*.js'],
         tasks: ['babel:dist']
       },
       babelTest: {
-        files: ['test/spec/{,*/}*.js'],
+        files: ['test/spec/**/*.js'],
         tasks: ['babel:test', 'test:watch']
       },
       gruntfile: {
         files: ['Gruntfile.js']
       },
       sass: {
-        files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}',
-                '<%= config.app %>/styles/**/{,*/}*.{scss,sass}'],
+        files: ['<%= config.app %>/styles/**/*.{scss,sass}'
+        ],
         tasks: ['sass', 'postcss']
       },
       styles: {
@@ -121,7 +125,6 @@ module.exports = function (grunt) {
     },
 
     // Make sure code styles are up to par and there are no obvious mistakes
-    // 语法检查
     eslint: {
       target: [
         'Gruntfile.js',
@@ -132,14 +135,14 @@ module.exports = function (grunt) {
     },
 
     // Mocha testing framework configuration options
-    // mocha: {
-    //   all: {
-    //     options: {
-    //       run: true,
-    //       urls: ['http://<%= browserSync.test.options.host %>:<%= browserSync.test.options.port %>/index.html']
-    //     }
-    //   }
-    // },
+    mocha: {
+      all: {
+        options: {
+          run: true,
+          urls: ['http://<%= browserSync.test.options.host %>:<%= browserSync.test.options.port %>/index.html']
+        }
+      }
+    },
 
     // Compiles ES6 with Babel
     babel: {
@@ -206,14 +209,15 @@ module.exports = function (grunt) {
     },
 
     // Automatically inject Bower components into the HTML file
+    //将bower中的 依赖项 自动注入到html中
     wiredep: {
       app: {
         src: ['<%= config.app %>/index.html'],
-        exclude: ['bootstrap.js'],
         ignorePath: /^(\.\.\/)*\.\./
       },
       sass: {
         src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
+
         ignorePath: /^(\.\.\/)+/
       }
     },
@@ -260,7 +264,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/images',
-          src: '{,*/}*.{gif,jpeg,jpg,png}',
+          //src: '{,*/}*.{gif,jpeg,jpg,png}',
+          src: '{,*/}*.{png}',
           dest: '<%= config.dist %>/images'
         }]
       }
@@ -336,42 +341,11 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/{,*/}*.*',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
-        }, 
-        // {
-        //   expand: true,
-        //   dot: true,
-        //   cwd: '.',
-        //   src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
-        //   dest: '<%= config.dist %>'
-        // }, 
-        {
-          expand: true,
-          dot: true,
-          cwd: '.',
-          src: 'bower_components/jquery/dist/*',
-          dest: '<%= config.dist %>'
         }]
-      }
-    },
-
-    // Generates a custom Modernizr build that includes only the tests you
-    // reference in your app
-    modernizr: {
-      dist: {
-        devFile: 'bower_components/modernizr/modernizr.js',
-        outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
-        files: {
-          src: [
-            '<%= config.dist %>/scripts/{,*/}*.js',
-            '<%= config.dist %>/styles/{,*/}*.css',
-            '!<%= config.dist %>/scripts/vendor/*'
-          ]
-        },
-        uglify: true
       }
     },
 
@@ -425,9 +399,8 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'browserSync:test'
-      // ,
-      // 'mocha'
+      'browserSync:test',
+      'mocha'
     ]);
   });
 
@@ -441,15 +414,13 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'modernizr',
     'filerev',
     'usemin',
     'htmlmin'
   ]);
 
   grunt.registerTask('default', [
-    //语法检查
-    // 'newer:eslint',
+    'newer:eslint',
     'test',
     'build'
   ]);
