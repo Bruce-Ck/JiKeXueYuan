@@ -5,7 +5,15 @@
 
 1)利用less或者sass改善极客学院CSS
 
-目标：1.编写Grunt或Gulp脚本对Sass或者Less进行编译。2.符合性能优化标准进行压缩合并以及充分利用Less或Sass优势少写代码
+目标：  
+1. 编写Grunt或Gulp脚本对Sass或者Less进行编译。  
+2. 符合性能优化标准进行压缩合并以及充分利用Less或Sass优势少写代码
+
+完成情况说明:  
+1. app文档是HTML,CSS,JS源码;  
+2. dist是压缩后的代码;  
+3. 使用yeoman构建整个工程,所需的依赖在package.json中  
+4. 前端css代码使用sass编写  
 
 2)利用less或sass编写公交站牌
 

@@ -7,6 +7,9 @@
 
 目标：后台改成nodejs版本，express渲染模板并搭载mysql。
 
-
-
+完成情况说明:  
+1. 后台架构:nodejs+express+ORM+MySQL
+2. 前端js代码使用requirejs进行模块化
+3. 完成页面包括移动版百度新闻首页+后台管理+后台登陆
+4. 未进行漏洞防护
 
