@@ -34,7 +34,7 @@
       <file leaf-file-name="_chooseClass.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/_chooseClass.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65957445">
+            <state vertical-scroll-proportion="1.0301418">
               <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
               <folding />
             </state>
@@ -167,7 +167,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="710" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="710" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.47580644" order="0" side_tool="false" content_ui="tabs" />
@@ -258,7 +258,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/_chooseClass.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65957445">
+        <state vertical-scroll-proportion="1.0301418">
           <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding />
         </state>
