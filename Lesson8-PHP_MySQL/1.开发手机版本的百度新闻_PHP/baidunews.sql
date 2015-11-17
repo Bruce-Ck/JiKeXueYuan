@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015-09-21 11:12:04
+-- Generation Time: 2015-09-28 16:33:22
 -- 服务器版本： 5.6.24
 -- PHP Version: 5.6.8
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `news_baijia` (
   `content` text NOT NULL,
   `from` varchar(50) NOT NULL,
   `time` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `news_baijia`
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `news_entertainment` (
 --
 
 INSERT INTO `news_entertainment` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 00:00:00');
+(8, '娱乐-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-20 16:00:00');
 
 -- --------------------------------------------------------
 
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `news_internet` (
 --
 
 INSERT INTO `news_internet` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(2, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 16:33:00');
+(2, '互联网-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 08:33:00');
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `news_local` (
 --
 
 INSERT INTO `news_local` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '添加内容就不再重复了，感谢理解……', '向问天', '2015-09-21 16:30:00');
+(8, '本地-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '添加内容就不再重复了，感谢理解……', '向问天', '2015-09-21 08:30:00');
 
 -- --------------------------------------------------------
 
@@ -131,14 +131,14 @@ CREATE TABLE IF NOT EXISTS `news_military` (
   `content` text NOT NULL,
   `from` varchar(50) NOT NULL,
   `time` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `news_military`
 --
 
 INSERT INTO `news_military` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 00:00:00');
+(8, '军事-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-20 16:00:00');
 
 -- --------------------------------------------------------
 
@@ -160,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `news_picture` (
 --
 
 INSERT INTO `news_picture` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 00:00:00');
+(8, '图片-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-20 16:00:00');
 
 -- --------------------------------------------------------
 
@@ -175,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `news_recommend` (
   `content` text NOT NULL,
   `from` varchar(50) NOT NULL,
   `time` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `news_recommend`
@@ -188,7 +188,7 @@ INSERT INTO `news_recommend` (`id`, `title`, `img_url`, `content`, `from`, `time
 (4, '金正恩视察洪水灾区 朝鲜罕见公开受灾片段', 'http://img1.cache.netease.com/catchpic/D/D7/D786FDC80FA967E4F8A1142B8E50C137.jpg', '据报道，金正恩在当地进行指导时表示，军民团结一致，修建了几千户住宅，电力和铁路等基本上的复原建设已经结束，这是巨大的成果。', '网易', '2015-09-07 00:00:00'),
 (5, '学了33天，8岁失明小鼓手开了场演唱会唱哭全场!', 'http://img1.cache.netease.com/catchpic/9/9D/9D9EFFC57998D52F568776D165F6C8BB.png', '梦想是什么？亲情是什么？爱，又是什么？\n\n他们都是人生中不可或缺的一部分，有了他们，你才有可能去做梦，有勇气去追逐，有机会去尝试那些未知的辛酸苦辣，更才有资格去爱！', '网易', '2015-09-17 00:00:00'),
 (6, '董明珠：没制造业马云也完蛋！！！', 'http://img3.cache.netease.com/digi/2015/9/17/20150917173807198ad_550.jpg', '1.格力董事长董明珠日前在接受媒体采访时表示，“没制造业马云才真完蛋了”。董明珠表示：“如果实体经济不行，那一定是因为你自己无能。互联网对我们来说只有提高效率的作用，而不是一种伤害。比如说马云，他在他的轨道上，你在你的轨道上，不可能因为马云，制造业就完蛋了，反过来，没有制造业，马云他才真正完蛋了。” 董明珠还称，格力将会引入军事化管理，要留下的是认同格力文化的人，有梦想的人。', '网易', '2015-09-08 00:00:00'),
-(8, '习近平访美详细日程披露', 'http://t12.baidu.com/it/u=http://b.hiphotos.baidu.com/news/q%3D100/sign=1442b36c75f082022b92953f7bfbfb8a/4d086e061d950a7bbb01198b0cd162d9f2d3c94d.jpg&amp;fm=36', '习近平1985年访问艾奥瓦州时，曾受到一户人家的招待。2012年故地重游时，时任中国国家副主席...', '热点', '2015-09-21 00:00:00'),
+(8, '习近平访美详细日程披露', 'http://y1.ifengimg.com/a/2015/0915/486dffa077da308size62_w548_h240.jpg', '习近平1985年访问艾奥瓦州时，曾受到一户人家的招待。2012年故地重游时，时任中国国家副主席...', '热点', '2015-09-20 16:00:00'),
 (15, '河南警察派出所门口枪指女子称&quot;打死你也是白打&quot;', 'http://img1.cache.netease.com/cnews/2015/9/21/201509211141401b1cb_550.png', '“河南灵宝市一民警在派出所门前用枪指向一名女子，并称‘打死你也白打’。”9月20日，一段民警在派出所外持枪指向一名女子的视频在网上传开。\n\n9月21日，灵宝警方回应澎湃新闻，警方已对上述视频进行调查核实，将针对视频内容发布声明，目前具体情况不便透露。', '网易头条', '2015-09-21 11:37:40'),
 (16, '传北京国土局原局长出境被拒 携4000万现金自首', 'http://img6.cache.netease.com/cnews/2015/9/21/201509211526420d629_550.jpg', '今年初网上出现一则传言，说北京市国土资源局前局长安家盛及其夫人涉嫌严重违纪，正在接受组织调查。又有爆料者称安家盛是开车装着4000万现金，到纪委投案自首的。由于安家盛已于2008年卸任国土局长一职，并非现任厅局级官员，所以有关部门并未在第一时间通报相关情况。长安街知事获悉，虽然具体细节有点儿出入，但安家盛确实已经“进去”了。北京市政协日前免去了他的特邀委员资格。', '澎湃新闻网(上海)', '2015-09-21 15:28:06'),
 (17, '人民日报:遇到困难李嘉诚不能共度难关 不必挽留', 'http://img5.cache.netease.com/cnews/2015/9/21/20150921000410afca3_550.jpg', '这几天，亚洲首富李嘉诚深陷舆论漩涡，关于他从大陆撤资的争论，仍然在唇枪舌剑地进行着。是正常的运作，还是道义的失守？是合法的进退，还是无奈的撤离？义愤填膺的道德审视、唱衰中国的负面猜测、恐慌情绪的传染效应……所有这些元素，使得李嘉诚的撤离变得十分敏感。\n\n那么，如何看待李嘉诚“投资路线图”的转向？一些人选择从感性的角度来审视。改革开放以来，大陆的优惠政策、开放环境、巨大市场，是他走到今天的重要基石；而这几年来，由于转方式、调结构，大陆经济增速主动回调，李嘉诚的选择就显得尤为扎眼。从普通人的朴素情感出发，好的时候同享福，遇到困难却不能共度难关，这在观感上确实让一些人觉得有点说不过去。', '人民日报(北京)', '2015-09-21 00:04:37'),
@@ -196,7 +196,8 @@ INSERT INTO `news_recommend` (`id`, `title`, `img_url`, `content`, `from`, `time
 (19, '兰州工地挖出巨大化石：头骨眼窝可放下成人拳头', 'http://img2.cache.netease.com/cnews/2015/9/21/20150921101608f1930.jpg', '每日甘肃网-西部商报讯 “嘣”的一声，余师傅手中的铁铲被弹了回来，底下有东西，还是个硬家伙！旁边的白师傅急忙走了过去，用手拨拉，这一拨可了不得了，足足让随后赶到的各方专家及民警忙活了5个多小时。\n\n昨日下午，兰州九州工地上发现“古生物化石”的消息传出后，九州派出所民警及城关区文化馆的工作人员迅速赶到。在事发现场发现了大量疑似“古生物化石”，不过，到底是何种生物遗迹，尚不能准确鉴定。今日，兰州市文物局专家将赶赴现场为其辨明真身。', '每日甘肃网(兰州)', '2015-09-21 09:13:51'),
 (20, '曝外籍乘客上海地铁内喝酒打闹扯内裤荡秋千(图)', 'http://img1.cache.netease.com/catchpic/7/74/743FCDFAC22BF0429780E6A7B128CFF4.jpg', '网友爆料称，9月20日晚，一群外籍乘客在上海地铁6号线上嬉戏打闹。对此，上海地铁回应澎湃新闻记者说，尽管目前还没有来得及确定网友反映的情况究竟发生在具体哪列车上，但任何人在乘坐上海地铁时，都应该遵守公序良俗，不影响运营安全及其他乘客乘坐。\n\n网友拍摄的小视频显示，车厢内有人在喝啤酒，啤酒沫也直接洒在地铁车厢地面上；一名女子在拉扯男子的内裤，而2名男子则荡在拉杆扶手上；2名女子像“猴子”一样荡在拉杆扶手上，同时作出互相踹斗的动作。', '澎湃新闻网(上海)', '2015-09-21 12:26:38'),
 (21, '郑州女生泳池内比赛抱鱼 坚持60秒可带走鱼(图)', 'http://img1.cache.netease.com/catchpic/2/2E/2EFD01CC1E9B1B38BFBF51DBD2B35E66.jpg', '2015年09月20日，河南省郑州市，一家户外温泉泳池内，几名美女着比基尼上演摸鱼大赛，摸到鱼并将其抱起60秒即可将鱼带走。活动现场，比基尼美女湿身引民众围观拍照，笑料百出。据悉，本次大赛所用鱼从信阳南湾湖运到郑州，当日2015南湾湖第三届捕鱼节开幕。', '中国新闻网(北京)', '2015-09-21 11:04:00'),
-(22, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-05-20 00:00:00');
+(22, '添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-05-19 16:00:00'),
+(39, '习奥今年首次会面细节:秋夜散步 未打领带(图)', 'http://img2.cache.netease.com/cnews/2015/9/25/20150925093358b344a.png', '央广网华盛顿9月25日消息 据中国之声《新闻纵横》报道，关注习近平主席的访美之旅。北京时间今早五点半，习主席抵达了访美第二站——美国首都华盛顿，将在这里出席奥巴马总统为其举行的一系列国事活动。按计划，习主席此刻正与奥巴马共进晚宴，这是两人今年的首次会面，\n\n大约两个半小时前习主席抵达华盛顿。在酒店稍事休息后，他前往白宫，与奥巴马会面，这也是两国元首今年的首次见面。不过，这并不是一场打领带的正式会晤，习主席来到白宫，是要同奥巴马一起去布莱尔国宾馆，在那里，奥巴马为习主席准备了一场小范围的晚宴。', ' 中国广播网(北京)', '2015-09-25 02:35:53');
 
 -- --------------------------------------------------------
 
@@ -218,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `news_science` (
 --
 
 INSERT INTO `news_science` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 00:00:00');
+(8, '科学-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-20 16:00:00');
 
 -- --------------------------------------------------------
 
@@ -240,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `news_society` (
 --
 
 INSERT INTO `news_society` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 00:00:00');
+(8, '社会-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-20 16:00:00');
 
 -- --------------------------------------------------------
 
@@ -262,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `news_woman` (
 --
 
 INSERT INTO `news_woman` (`id`, `title`, `img_url`, `content`, `from`, `time`) VALUES
-(8, '添加内容就不再重复了', 'http://pic30.nipic.com/20130617/12885892_085743279104_2.jpg', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-21 00:00:00');
+(8, '女人-添加内容就不再重复了', 'http://s0.hao123img.com/res/img/logo/logo201509091.png', '如题，最后的效果和“推荐”、“百家”相同！', '向问天', '2015-09-20 16:00:00');
 
 -- --------------------------------------------------------
 
@@ -361,7 +362,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `news_baijia`
 --
 ALTER TABLE `news_baijia`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT for table `news_entertainment`
 --
@@ -381,7 +382,7 @@ ALTER TABLE `news_local`
 -- AUTO_INCREMENT for table `news_military`
 --
 ALTER TABLE `news_military`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `news_picture`
 --
@@ -391,7 +392,7 @@ ALTER TABLE `news_picture`
 -- AUTO_INCREMENT for table `news_recommend`
 --
 ALTER TABLE `news_recommend`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 --
 -- AUTO_INCREMENT for table `news_science`
 --
