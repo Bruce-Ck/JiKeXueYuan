@@ -14,3 +14,5 @@
 用户名：root  
 密码：
 3. db在根目录中，数据库名-->baidunews
+4. 主页：http://localhost/baidunewsThinkPHP/
+5. 登陆页：http://localhost/baidunewsThinkPHP/login
