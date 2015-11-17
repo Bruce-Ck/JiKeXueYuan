@@ -14,10 +14,12 @@
 2. dist是压缩后的代码;  
 3. 使用yeoman构建整个工程,所需的依赖在package.json中  
 4. 前端css代码使用sass编写  
+5. 主页进入路径：dist下的index.html文件
 
 2)利用less或sass编写公交站牌
 
-目标：利用less或sass编写代码制作出一个公交站牌的效果。
+目标：利用sass编写代码制作出一个公交站牌的效果。
+主页进入路径：app下的index.html文件
 
 
 
