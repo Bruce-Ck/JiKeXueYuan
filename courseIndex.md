@@ -1,4 +1,4 @@
-#  极客学院大前端作业索引
+# 大前端作业索引
 
 > 此内容是参考Github上[这个位置](https://github.com/xiangsongtao/JiKeXueYuan)的信息的总结，前端学习的作业是在[课程13](https://github.com/xiangsongtao/JiKeXueYuan/tree/master/Lesson13-Git_GitHub)中按照作业的要求上传到Github上开源的，如果涉及侵权请及时联系我，我会移除此信息，详细的内容请参考上面的连接。
 
