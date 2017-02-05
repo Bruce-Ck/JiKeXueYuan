@@ -15,6 +15,7 @@ http://localhost:3000/index
 http://localhost:3000/login
 
 完成情况说明:
+
 1. 后台架构:nodejs+express+ORM+MySQL
 2. 前端js代码使用requirejs进行模块化
 3. 完成页面包括移动版百度新闻首页+后台管理+后台登陆
