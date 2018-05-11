@@ -68,4 +68,3 @@
 
 坚持到底运气不会太差。
 
-ck add some feature.
